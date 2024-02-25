@@ -1,0 +1,11 @@
+C:\Users\GRV\source\repos\SkillTrackerApi\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\GRV\source\repos\SkillTrackerApi\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\GRV\source\repos\SkillTrackerApi\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\GRV\source\repos\SkillTrackerApi\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\GRV\source\repos\SkillTrackerApi\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\GRV\source\repos\SkillTrackerApi\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\GRV\source\repos\SkillTrackerApi\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\GRV\source\repos\SkillTrackerApi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\GRV\source\repos\SkillTrackerApi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\GRV\source\repos\SkillTrackerApi\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\GRV\source\repos\SkillTrackerApi\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

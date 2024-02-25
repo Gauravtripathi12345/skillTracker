@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SkillTrackerDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Skill">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="UserSkills" Relationship="Self.FK__UserSkill__Skill__5070F446" FromRole="Skill" ToRole="UserSkill" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmailId" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Is_Admin" Type="Boolean" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DateOfBirth" Type="DateTime" Precision="0" />
+    <Property Name="ContactNo" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="Gender" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="UserSkills" Relationship="Self.FK__UserSkill__UserI__4F7CD00D" FromRole="User" ToRole="UserSkill" />
+  </EntityType>
+  <EntityType Name="UserSkill">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="SkillID" Type="Int32" />
+    <Property Name="Proficiency" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Skill" Relationship="Self.FK__UserSkill__Skill__5070F446" FromRole="UserSkill" ToRole="Skill" />
+    <NavigationProperty Name="User" Relationship="Self.FK__UserSkill__UserI__4F7CD00D" FromRole="UserSkill" ToRole="User" />
+  </EntityType>
+  <Association Name="FK__UserSkill__Skill__5070F446">
+    <End Role="Skill" Type="Self.Skill" Multiplicity="0..1" />
+    <End Role="UserSkill" Type="Self.UserSkill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Skill">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSkill">
+        <PropertyRef Name="SkillID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserSkill__UserI__4F7CD00D">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="UserSkill" Type="Self.UserSkill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSkill">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SkillTrackerDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Skills" EntityType="Self.Skill" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="UserSkills" EntityType="Self.UserSkill" />
+    <AssociationSet Name="FK__UserSkill__Skill__5070F446" Association="Self.FK__UserSkill__Skill__5070F446">
+      <End Role="Skill" EntitySet="Skills" />
+      <End Role="UserSkill" EntitySet="UserSkills" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserSkill__UserI__4F7CD00D" Association="Self.FK__UserSkill__UserI__4F7CD00D">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserSkill" EntitySet="UserSkills" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

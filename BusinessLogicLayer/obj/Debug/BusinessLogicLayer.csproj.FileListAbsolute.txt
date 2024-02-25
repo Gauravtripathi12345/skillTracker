@@ -1,0 +1,15 @@
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll.config
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\bin\Debug\EntityFramework.dll
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\bin\Debug\EntityFramework.xml
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\GRV\source\repos\SkillTrackerApi\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
